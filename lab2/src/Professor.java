@@ -16,6 +16,7 @@ public class Professor {
         return note;
     }
 
+    //ex1
     public List<Integer> nichAusreichendeNoten(List<Integer> listNoten){
         List<Integer> finalList= new ArrayList<>();
         for(int i=0; i<listNoten.size(); i++){
@@ -25,6 +26,7 @@ public class Professor {
         }return finalList;
     }
 
+    //ex2
     public Float durchsnitt(List<Integer> listNote){
         Float aux =0.0f;
         for(int i=0; i<listNote.size(); i++){
@@ -33,6 +35,7 @@ public class Professor {
         return aux/listNote.size();
     }
 
+    //ex3
     public List<Integer> abgerundeteNoten(List<Integer> originaleNoten){
         List<Integer> aux = new ArrayList<>();
         for( int i: originaleNoten){
@@ -41,6 +44,7 @@ public class Professor {
         return aux;
     }
 
+    //ex4
     public Integer maxNote(List<Integer> originaleNoten){
         List<Integer> aux = new ArrayList<>();
         aux = abgerundeteNoten(originaleNoten);
